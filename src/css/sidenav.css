@@ -1,0 +1,11 @@
+#sidenav{
+    width: 325px;
+    background-color: rgb(60, 60, 255);
+    height: 100vh;
+    color: white;
+    padding: 15px 20px;
+}
+.title{
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
