@@ -1,0 +1,52 @@
+#main {
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+#main .ele-container {
+  position: relative;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+#main .arr-ele {
+  width: 3px;
+  /* background-color: rgb(0, 143, 124); */
+  background-color: black;
+  border-radius: 3px;
+}
+#main .ele-label {
+  border-radius: 3px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.83);
+  border: 0.5px solid white;
+  padding: 2px 3px;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 99;
+}
+#main .ele-container:hover .ele-label {
+  display: block;
+}
+#main .ele-container:hover {
+  background-color: rgb(170, 170, 170);
+}
+@media screen and (max-width: 650px) {
+  #main {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  #main .ele-container {
+    width: 100%;
+  }
+}
